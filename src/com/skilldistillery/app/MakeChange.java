@@ -36,7 +36,9 @@ public class MakeChange {
 
 //User Story #4
 //If the amount tendered is more than the cost of the item, display the number of bills and coins that should be given to the customer.
-//
+		 else {
+			 System.out.println("Your change is: ");
+		 }
 //Grading
 //This is a graded project. You are expected to have your project completed by the start of class on Monday morning.
 //
