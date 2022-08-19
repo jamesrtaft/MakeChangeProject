@@ -6,7 +6,6 @@ public class MakeChange {
 
 	public static void main(String[] args) {
 
-
 //Make Change (Cash Register)
 //Overview
 //In the cash register we will calculate the amount of change returned to a customer based on the purchase price and the amount tendered. We will also notify the attendant how many of each piece of currency ($20 ,$10 ,$5 ,$1, .25c, .10c, .05c, .01c) is needed to make the change for the customer. Change should be provided using the largest bill and coin denominations as possible. Denominations that are not used should not be displayed.
@@ -17,10 +16,11 @@ public class MakeChange {
 //The user is prompted asking for the price of the item.
 		double price = 0;
 		double amt = 0;
+		double change = 0;
 		System.out.println("Please enter the item's price below: ");
 		Scanner sc = new Scanner(System.in);
 		price = sc.nextDouble();
-		
+
 //User Story #2
 //The user is then prompted asking how much money was tendered by the customer.
 		System.out.println("Please enter the amount tendered below: ");
@@ -28,17 +28,26 @@ public class MakeChange {
 
 //User Story #3
 //Display an appropriate message if the customer provided too little money or the exact amount.
-		if(amt < price) {
+		if (amt < price) {
 			System.out.println("I pity da fool that don't pay enough!!!");
-		}else if(amt == price) {
+		} else if (amt == price) {
 			System.out.println("Check out the big brain on Brett...");
 		}
 
 //User Story #4
 //If the amount tendered is more than the cost of the item, display the number of bills and coins that should be given to the customer.
-		 else {
-			 System.out.println("Your change is: ");
-		 }
+		else {
+			System.out.println("Make me do math :( Your change is: " + change);
+			change = amt - price;
+
+		}
+	}
+
+	public static void yourChange(double change) {
+		if(change % )
+	}
+
+}
 //Grading
 //This is a graded project. You are expected to have your project completed by the start of class on Monday morning.
 //
@@ -56,7 +65,3 @@ public class MakeChange {
 //If you get a zero on the project, you can upgrade to a score of .5 if you turn in a working project by the start of class on the following Monday morning AND notify an instructor that you wish to get partial credit.
 //
 //To turn in a project, you must push it to GitHub. You must include a README.md that describes how to run your program.
-
-	}
-
-}
