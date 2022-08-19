@@ -1,5 +1,7 @@
 package com.skilldistillery.app;
 
+import java.util.Scanner;
+
 public class MakeChange {
 
 	public static void main(String[] args) {
@@ -13,13 +15,25 @@ public class MakeChange {
 //
 //User Story #1
 //The user is prompted asking for the price of the item.
-//
+		double price = 0;
+		double amt = 0;
+		System.out.println("Please enter the item's price below: ");
+		Scanner sc = new Scanner(System.in);
+		price = sc.nextDouble();
+		
 //User Story #2
 //The user is then prompted asking how much money was tendered by the customer.
-//
+		System.out.println("Please enter the amount tendered below: ");
+		amt = sc.nextDouble();
+
 //User Story #3
 //Display an appropriate message if the customer provided too little money or the exact amount.
-//
+		if(amt < price) {
+			System.out.println("I pity da fool that don't pay enough!!!");
+		}else if(amt == price) {
+			System.out.println("Check out the big brain on Brett...");
+		}
+
 //User Story #4
 //If the amount tendered is more than the cost of the item, display the number of bills and coins that should be given to the customer.
 //
