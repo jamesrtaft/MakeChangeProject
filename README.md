@@ -8,4 +8,4 @@ In this project I learned/applied
 
 ## Tech Used
 Ex. - Java, Eclipse, Git...
-# MakeChangeProject
+# Make Change Project
