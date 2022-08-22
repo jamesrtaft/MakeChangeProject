@@ -10,6 +10,10 @@ public class MakeChange {
 		double price = 0;
 		double amt = 0;
 		double change = 0;
+		double quarter = 0.25;
+	    double nickel = 0.05;
+	    double dime = 0.10;
+	    double penny = 0.01;
 
 		NumberFormat nf = NumberFormat.getInstance();
 		nf.setMaximumFractionDigits(2);
